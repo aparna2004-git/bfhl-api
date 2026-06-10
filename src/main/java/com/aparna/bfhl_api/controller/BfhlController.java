@@ -22,13 +22,4 @@ public class BfhlController {
                 bfhlService.processData(request)
         );
     }
-
-    @GetMapping
-    public String healthCheck() {
-        return "BFHL API is running";
-    }
-    @GetMapping("/health")
-    public ResponseEntity<String> health() {
-        return ResponseEntity.ok("API is running");
-    }
 }
