@@ -27,4 +27,8 @@ public class BfhlController {
     public String healthCheck() {
         return "BFHL API is running";
     }
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("API is running");
+    }
 }
